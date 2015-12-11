@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_perfectcontact</name>
+	<author>Niels van der Veer - Perfect Web Team</author>
+	<creationDate>December 2015</creationDate>
+	<copyright>Copyright (C) 2015 Perfect Web Team. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@perfectwebteam.nl</authorEmail>
+	<authorUrl>www.perfectwebteam.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_PERFECTCONTACT_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_perfectcontact">mod_perfectcontact.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="nl-NL">nl-NL/nl-NL.mod_perfectcontact.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_perfectcontact.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_contact/models/fields">
+				<field
+					name="contactid"
+					type="modal_contact"
+					description="MOD_PERFECTCONTACT_CONTACTID_DESC"
+					label="MOD_PERFECTCONTACT_CONTACTID"
+					required="true"
+					edit="true"
+					clear="false"
+				/>
+				<field
+					name="show_name"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWNAME"
+					description="MOD_PERFECTCONTACT_SHOWNAME_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_email"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWEMAIL"
+					description="MOD_PERFECTCONTACT_SHOWEMAIL_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_phone"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWPHONE"
+					description="MOD_PERFECTCONTACT_SHOWPHONE_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_address"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWADDRESS"
+					description="MOD_PERFECTCONTACT_SHOWADDRESS_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_linka"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWLINKA"
+					description="MOD_PERFECTCONTACT_SHOWLINKA_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_linkb"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWLINKB"
+					description="MOD_PERFECTCONTACT_SHOWLINKB_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_linkc"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWLINKC"
+					description="MOD_PERFECTCONTACT_SHOWLINKC_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_linkd"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWLINKD"
+					description="MOD_PERFECTCONTACT_SHOWLINKD_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_linke"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERFECTCONTACT_SHOWLINKE"
+					description="MOD_PERFECTCONTACT_SHOWLINKE_DESC"
+					default="1"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
